@@ -1,0 +1,54 @@
+{
+  "name": "dsh-notion-workspaces",
+  "version": "0.1.0",
+  "description": "Bind each DSH workspace to its own Notion workspace over the official Notion MCP, with per-workspace authorization and a settings dialog.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "notion",
+    "mcp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moyu-777/dsh-notion-workspaces.git"
+  },
+  "homepage": "https://github.com/moyu-777/dsh-notion-workspaces#readme",
+  "bugs": {
+    "url": "https://github.com/moyu-777/dsh-notion-workspaces/issues"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-credentials": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0",
+    "@deepseek-ai/dsh-mcp-client": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  }
+}
