@@ -1,11 +1,12 @@
 Third-party notices
 
 lib/notion-oauth.js is adapted from the OAuth implementation in
-dsh-notion-mcp by mingzeng21 (https://github.com/mingzeng21/dsh-notion),
+dsh-notion-mcp by mingzeng (https://github.com/mingzeng21/dsh-notion),
 which is MIT licensed:
 
   MIT License
-  Copyright (c) mingzeng21
+
+  Copyright (c) 2026 mingzeng
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal

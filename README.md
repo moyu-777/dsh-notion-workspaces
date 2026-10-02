@@ -87,12 +87,22 @@ button and the settings page instead.
 ## Attribution
 
 The OAuth flow in `lib/notion-oauth.js` is adapted from
-[`dsh-notion-mcp`](https://github.com/mingzeng21/dsh-notion) by mingzeng21
-(MIT), with the callback port made per-binding.
+[`dsh-notion-mcp`](https://github.com/mingzeng21/dsh-notion) by mingzeng
+([@mingzeng21](https://github.com/mingzeng21)), MIT licensed — the retained
+copyright notice is in [NOTICE](NOTICE). The differences here are that the
+callback port and the credential ref are per binding, and the module is
+restructured into named exports.
+
+## Disclaimer
+
+An independent community plugin. It is **not affiliated with, endorsed by, or
+sponsored by Notion Labs, Inc.** "Notion" is a trademark of Notion Labs, Inc.,
+used here only to describe what the plugin connects to. Your use of Notion's
+services remains governed by Notion's own terms.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 ---
 
@@ -161,10 +171,17 @@ dsh plugin --profile desktop add github:moyu-777/dsh-notion-workspaces
 
 ### 致谢
 
-`lib/notion-oauth.js` 的 OAuth 流程改编自 mingzeng21 的
-[`dsh-notion-mcp`](https://github.com/mingzeng21/dsh-notion)（MIT），并把回调端口改为
-按绑定分配。
+`lib/notion-oauth.js` 的 OAuth 流程改编自 mingzeng
+（[@mingzeng21](https://github.com/mingzeng21)）的
+[`dsh-notion-mcp`](https://github.com/mingzeng21/dsh-notion)（MIT），保留的版权声明见
+[NOTICE](NOTICE)。此处改动是回调端口与凭证引用都改为按绑定分配，并把模块重构为具名导出。
+
+### 免责声明
+
+独立的社区插件，**与 Notion Labs, Inc. 无隶属、无背书、无赞助关系**。「Notion」是
+Notion Labs, Inc. 的商标，此处仅用于说明本插件连接的对象。你使用 Notion 服务仍受
+Notion 自身条款约束。
 
 ### 许可
 
-MIT，见 [LICENSE](LICENSE)。
+MIT，见 [LICENSE](LICENSE) 与 [NOTICE](NOTICE)。
